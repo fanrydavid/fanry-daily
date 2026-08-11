@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Fanry 日报 - 具身智能</title>
+    <link>https://fanrydavid.github.io/fanry-daily/</link>
+    <description>每日具身智能行业热点新闻，聚焦技术进展与商业动态</description>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 10 Aug 2026 09:00:00 +0800</lastBuildDate>
+
+    <item>
+      <title>宇树科技今日科创板申购，DeepSeek 1.41亿战投锁定36个月</title>
+      <link>https://fanrydavid.github.io/fanry-daily/#news-1</link>
+      <description><![CDATA["A股人形机器人第一股"宇树科技以150.80元/股、约610亿元发行市值启动申购，DeepSeek母公司斥资1.41亿元参与战略配售并自愿锁定36个月，双方签署《战略合作备忘录》在通用AGI、高性能机器人与AI大模型三大方向深度绑定。]]></description>
+      <pubDate>Mon, 10 Aug 2026 09:00:00 +0800</pubDate>
+      <guid isPermaLink="false">fanry-daily-2026-08-10-1</guid>
+      <category>融资并购</category>
+    </item>
+
+    <item>
+      <title>Google DeepMind 发布 Gemini Robotics 2，首次实现人形机器人全身控制</title>
+      <link>https://fanrydavid.github.io/fanry-daily/#news-2</link>
+      <description><![CDATA[Google DeepMind 发布 Gemini Robotics 2 系列三模型（VLA主力模型、ER 2推理模型、On-Device 2端侧模型），首次实现从脚趾到指尖的全身协调控制，同一模型权重可适配多款不同构型机器人，并支持多机器人协作，被视为迈向物理AGI的关键里程碑。]]></description>
+      <pubDate>Mon, 10 Aug 2026 09:00:00 +0800</pubDate>
+      <guid isPermaLink="false">fanry-daily-2026-08-10-2</guid>
+      <category>技术突破</category>
+    </item>
+
+    <item>
+      <title>小米整合200人团队成立"具身智能与应用部"，前字节跳动孔涛挂帅</title>
+      <link>https://fanrydavid.github.io/fanry-daily/#news-3</link>
+      <description><![CDATA[原字节跳动机器人一号位孔涛加盟小米后统管新成立的具身智能与应用部，将此前分散的VLA、硬件、场景团队统一整合；其团队发布的具身基座模型Xiaomi-Robotics-1已在RoboCasa365、RoboDojo两大国际权威榜单综合排名全球第一。]]></description>
+      <pubDate>Mon, 10 Aug 2026 09:00:00 +0800</pubDate>
+      <guid isPermaLink="false">fanry-daily-2026-08-10-3</guid>
+      <category>行业动态</category>
+    </item>
+
+    <item>
+      <title>智元具身原生全模态大模型 WITA-Omni 登顶 DailyOmni 全球榜首</title>
+      <link>https://fanrydavid.github.io/fanry-daily/#news-4</link>
+      <description><![CDATA[智元自研的具身原生全模态大模型WITA-Omni Preview以85.21分综合成绩登顶DailyOmni权威评测榜首，在八项细分指标中六项第一；该模型将物理动作和表情提升为与语音并列的一级输出，使用千万小时级多模态数据训练。]]></description>
+      <pubDate>Mon, 10 Aug 2026 09:00:00 +0800</pubDate>
+      <guid isPermaLink="false">fanry-daily-2026-08-10-4</guid>
+      <category>技术突破</category>
+    </item>
+
+    <item>
+      <title>帕西尼完成10亿元战略轮融资，累计融资达35亿元估值破百亿</title>
+      <link>https://fanrydavid.github.io/fanry-daily/#news-5</link>
+      <description><![CDATA[具身智能企业帕西尼近日完成10亿元战略轮融资，由全球消费电子与半导体巨头、中银国际投资、鲲鹏基金等联合领投，老股东持续超额加码；截至目前累计融资规模达35亿元，估值突破百亿元。]]></description>
+      <pubDate>Mon, 10 Aug 2026 09:00:00 +0800</pubDate>
+      <guid isPermaLink="false">fanry-daily-2026-08-10-5</guid>
+      <category>融资并购</category>
+    </item>
+
+    <item>
+      <title>蚂蚁灵波启动首轮融资15亿元，聚焦通用机器人大脑</title>
+      <link>https://fanrydavid.github.io/fanry-daily/#news-6</link>
+      <description><![CDATA[蚂蚁集团旗下具身智能公司蚂蚁灵波确认启动首轮融资，拟募资15亿元，目标年底完成二轮融资；公司定位"通用大脑"不造本体，已发布LingBot系列2.0模型矩阵适配17个品牌20多种机器人构型。]]></description>
+      <pubDate>Mon, 10 Aug 2026 09:00:00 +0800</pubDate>
+      <guid isPermaLink="false">fanry-daily-2026-08-10-6</guid>
+      <category>融资并购</category>
+    </item>
+
+    <item>
+      <title>越疆发布全球首款具身全栖人形机器人 DOBOT LUMO</title>
+      <link>https://fanrydavid.github.io/fanry-daily/#news-7</link>
+      <description><![CDATA[越疆科技于8月5日正式发布全球首款"具身全栖"人形机器人越疆鹿萌（DOBOT LUMO），身高约1.3米，依托全栈自研空弈具身大模型实现多模态情绪感知、三维空间理解与主动行动、自主学习与长期进化三大核心突破。]]></description>
+      <pubDate>Mon, 10 Aug 2026 09:00:00 +0800</pubDate>
+      <guid isPermaLink="false">fanry-daily-2026-08-10-7</guid>
+      <category>产品发布</category>
+    </item>
+
+    <item>
+      <title>工信部发布首个具身智能数据集质量标准，11月1日正式实施</title>
+      <link>https://fanrydavid.github.io/fanry-daily/#news-8</link>
+      <description><![CDATA[工信部近日批准发布《人工智能 关键基础技术 具身智能数据集质量要求及评估方法》，涵盖完整性、安全性等八个评价维度，标志着具身智能数据集建设从"规模导向"转向"质量导向"；此前《YD/T 6770-2026 具身智能基准测试方法》已于6月1日实施。]]></description>
+      <pubDate>Mon, 10 Aug 2026 09:00:00 +0800</pubDate>
+      <guid isPermaLink="false">fanry-daily-2026-08-10-8</guid>
+      <category>标准规范</category>
+    </item>
+
+  </channel>
+</rss>
