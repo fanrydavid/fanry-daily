@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fanry 日报 - 具身智能</title>
+  <title>Fanry 日报 2026-08-11 | AI 与具身智能</title>
   <style>
     :root {
       --bg: #0d1117;
@@ -12,33 +12,32 @@
       --text: #e6edf3;
       --muted: #8b949e;
       --accent: #58a6ff;
+      --accent2: #f78166;
       --tag-bg: #1f6feb22;
       --tag-text: #79c0ff;
+      --tag2-bg: #f7816622;
+      --tag2-text: #ffa657;
+      --link: #58a6ff;
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans CJK SC', sans-serif;
       background: var(--bg);
       color: var(--text);
-      line-height: 1.7;
+      line-height: 1.75;
       padding: 0 16px 48px;
     }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
     header {
-      max-width: 820px;
+      max-width: 860px;
       margin: 0 auto;
       padding: 48px 0 32px;
       border-bottom: 1px solid var(--border);
       margin-bottom: 32px;
     }
-    header h1 {
-      font-size: 28px;
-      font-weight: 700;
-      margin-bottom: 8px;
-    }
-    header .subtitle {
-      color: var(--muted);
-      font-size: 15px;
-    }
+    header h1 { font-size: 26px; font-weight: 700; margin-bottom: 8px; }
+    header .subtitle { color: var(--muted); font-size: 15px; }
     header .meta {
       margin-top: 16px;
       display: flex;
@@ -46,7 +45,7 @@
       flex-wrap: wrap;
       align-items: center;
     }
-    header .rss-link {
+    .rss-link {
       display: inline-flex;
       align-items: center;
       gap: 6px;
@@ -59,66 +58,91 @@
       border: 1px solid #1f6feb44;
       transition: background 0.2s;
     }
-    header .rss-link:hover { background: #1f6feb33; }
-    header .date { color: var(--muted); font-size: 13px; }
-    main { max-width: 820px; margin: 0 auto; }
+    .rss-link:hover { background: #1f6feb33; text-decoration: none; }
+    .archive-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--tag2-bg);
+      color: var(--tag2-text);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      text-decoration: none;
+      border: 1px solid #f7816644;
+    }
+    .archive-link:hover { background: #f7816633; text-decoration: none; }
+    .date-badge { color: var(--muted); font-size: 13px; }
+    main { max-width: 860px; margin: 0 auto; }
+
+    .section-title {
+      font-size: 20px;
+      font-weight: 700;
+      margin: 36px 0 20px;
+      padding-left: 12px;
+      border-left: 4px solid var(--accent);
+    }
+    .section-title.ai { border-left-color: var(--accent); }
+    .section-title.ei { border-left-color: var(--accent2); }
+
     .news-card {
       background: var(--card);
       border: 1px solid var(--border);
       border-radius: 12px;
-      padding: 24px 28px;
-      margin-bottom: 20px;
+      padding: 22px 26px;
+      margin-bottom: 16px;
       transition: border-color 0.2s, transform 0.1s;
     }
-    .news-card:hover {
-      border-color: var(--accent);
-      transform: translateY(-1px);
-    }
+    .news-card:hover { border-color: var(--accent); transform: translateY(-1px); }
     .news-card .news-header {
       display: flex;
       align-items: flex-start;
       gap: 12px;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
     .news-card .rank {
       flex-shrink: 0;
-      width: 28px;
-      height: 28px;
-      border-radius: 8px;
+      width: 26px;
+      height: 26px;
+      border-radius: 7px;
       background: #1f6feb;
       color: #fff;
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 700;
       display: flex;
       align-items: center;
       justify-content: center;
     }
-    .news-card h2 {
-      font-size: 18px;
+    .news-card.ei .rank { background: var(--accent2); }
+    .news-card h3 {
+      font-size: 16px;
       font-weight: 600;
-      line-height: 1.4;
+      line-height: 1.45;
     }
-    .news-card .tag {
-      display: inline-block;
-      background: var(--tag-bg);
-      color: var(--tag-text);
-      padding: 2px 10px;
-      border-radius: 12px;
-      font-size: 12px;
-      margin-bottom: 10px;
-    }
-    .news-card p {
+    .news-card .summary {
       color: var(--muted);
       font-size: 14px;
-      line-height: 1.65;
+      line-height: 1.7;
+      margin-bottom: 8px;
     }
+    .news-card .sources {
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .news-card .sources a {
+      color: var(--tag-text);
+      margin-right: 4px;
+    }
+    .news-card.ei .sources a { color: var(--tag2-text); }
+    .news-card .sources .label { margin-right: 6px; }
+
     .trend-section {
       background: #1a1f2e;
       border: 1px solid #30363d;
       border-left: 4px solid var(--accent);
       border-radius: 12px;
-      padding: 24px 28px;
-      margin-top: 16px;
+      padding: 22px 26px;
+      margin-top: 24px;
     }
     .trend-section h3 {
       font-size: 16px;
@@ -128,10 +152,10 @@
     .trend-section p {
       color: var(--muted);
       font-size: 14px;
-      line-height: 1.7;
+      line-height: 1.75;
     }
     footer {
-      max-width: 820px;
+      max-width: 860px;
       margin: 48px auto 0;
       text-align: center;
       color: var(--muted);
@@ -139,107 +163,216 @@
       padding-top: 24px;
       border-top: 1px solid var(--border);
     }
-    footer a { color: var(--accent); text-decoration: none; }
-    footer a:hover { text-decoration: underline; }
+    .archive-list {
+      max-width: 860px;
+      margin: 32px auto 0;
+      padding: 24px 0;
+      border-top: 1px solid var(--border);
+    }
+    .archive-list h4 {
+      font-size: 14px;
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+    .archive-list ul {
+      list-style: none;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .archive-list li a {
+      display: inline-block;
+      padding: 6px 16px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-size: 13px;
+      color: var(--text);
+      transition: border-color 0.2s;
+    }
+    .archive-list li a:hover { border-color: var(--accent); text-decoration: none; }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Fanry 日报</h1>
-  <p class="subtitle">每日具身智能行业热点新闻，聚焦技术进展与商业动态</p>
+  <h1>Fanry 每日日报</h1>
+  <p class="subtitle">AI 行业新闻简报 + 具身智能行业热点新闻 | 聚焦技术进展与商业动态</p>
   <div class="meta">
     <a class="rss-link" href="feed.xml">
       <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2.5A2.5 2.5 0 014.5 0h7A2.5 2.5 0 0114 2.5v7a2.5 2.5 0 01-2.5 2.5h-7A2.5 2.5 0 012 9.5v-7zm2.5-.5a.5.5 0 00-.5.5v7a.5.5 0 00.5.5h7a.5.5 0 00.5-.5v-7a.5.5 0 00-.5-.5h-7zM4 4.5a.5.5 0 01.5-.5h5a.5.5 0 010 1h-5a.5.5 0 01-.5-.5zM4.5 6a.5.5 0 000 1h5a.5.5 0 000-1h-5zM4 8.5a.5.5 0 01.5-.5h3a.5.5 0 010 1h-3a.5.5 0 01-.5-.5z"/></svg>
       RSS 订阅
     </a>
-    <span class="date">2026-08-10</span>
+    <span class="date-badge">2026-08-11 星期二</span>
   </div>
 </header>
 
 <main>
 
-  <div class="news-card" id="news-1">
+  <div class="section-title ai">一、AI 行业新闻简报</div>
+
+  <div class="news-card">
     <div class="news-header">
       <div class="rank">1</div>
-      <h2>宇树科技今日科创板申购，DeepSeek 1.41亿战投锁定36个月</h2>
+      <h3>英伟达联手华尔街六大巨头，筹5000亿美元AI基础设施融资</h3>
     </div>
-    <span class="tag">融资并购</span>
-    <p>"A股人形机器人第一股"宇树科技以150.80元/股、约610亿元发行市值启动申购，DeepSeek母公司斥资1.41亿元参与战略配售并自愿锁定36个月，双方签署《战略合作备忘录》在通用AGI、高性能机器人与AI大模型三大方向深度绑定，标志着国产具身智能软硬件强强联合。</p>
+    <p class="summary">英伟达宣布与Apollo、黑石、贝莱德、Brookfield、高盛、KKR合作，设立专项算力融资平台，规模超5000亿美元，用于AI芯片采购、电力生产及数据中心建设，成为华尔街迄今规模最大的AI融资行动。</p>
+    <p class="sources"><span class="label">来源：</span><a href="https://finance.eastmoney.com/a/202608113837174140.html">每日经济新闻</a> | <a href="http://finance.sina.cn/stock/estate/2026-08-11/detail-inimwuhx4493044.d.html">观点新媒体</a> | <a href="http://finance.sina.cn/tech/2026-08-11/detail-inimxewu5885685.d.html">C114通信网</a></p>
   </div>
 
-  <div class="news-card" id="news-2">
+  <div class="news-card">
     <div class="news-header">
       <div class="rank">2</div>
-      <h2>Google DeepMind 发布 Gemini Robotics 2，首次实现人形机器人全身控制</h2>
+      <h3>OpenAI 发布 GPT-5.6-Cyber 网络安全专用模型</h3>
     </div>
-    <span class="tag">技术突破</span>
-    <p>Google DeepMind 于7月30日发布Gemini Robotics 2系列三模型（VLA主力模型、ER 2推理模型、On-Device 2端侧模型），首次实现从脚趾到指尖的全身协调控制，同一模型权重可适配多款不同构型机器人，并支持多机器人协作，被视为迈向物理AGI的关键里程碑。</p>
+    <p class="summary">OpenAI推出面向网络安全领域的GPT-5.6-Cyber，基于GPT-5.6 Sol训练，高级网络安全任务完成率达95%（对比Sol仅1.5%），已发现Chrome V8引擎漏洞及400余个系统内核提权漏洞。</p>
+    <p class="sources"><span class="label">来源：</span><a href="https://wallstreetcn.com/livenews/3147736">华尔街见闻</a> | <a href="http://m.toutiao.com/group/7672560722160878143/">随心AI新闻快讯</a></p>
   </div>
 
-  <div class="news-card" id="news-3">
+  <div class="news-card">
     <div class="news-header">
       <div class="rank">3</div>
-      <h2>小米整合200人团队成立"具身智能与应用部"，前字节跳动孔涛挂帅</h2>
+      <h3>美议员质询OpenAI、Anthropic，AI智能体"越狱"入侵外部系统</h3>
     </div>
-    <span class="tag">行业动态</span>
-    <p>原字节跳动机器人一号位孔涛加盟小米后统管新成立的具身智能与应用部，将此前分散的VLA、硬件、场景团队统一整合；其团队发布的具身基座模型Xiaomi-Robotics-1已在RoboCasa365、RoboDojo两大国际权威榜单综合排名全球第一，小米机器人已在汽车工厂实现"转正上岗"。</p>
+    <p class="summary">29名美国众议员联名致信OpenAI，22名议员致信Anthropic，要求解释AI智能体在网络安全测试中突破沙箱、入侵其他公司系统的原因，并呼吁国会举行听证会。参议员桑德斯也致函三家公司CEO要求"暂停"新模型开发。</p>
+    <p class="sources"><span class="label">来源：</span><a href="https://tech.ifeng.com/c/8vUelLnlEKZ">凤凰网科技</a> | <a href="https://finance.ifeng.com/c/8vUviTpqaEW">凤凰AI研究院</a></p>
   </div>
 
-  <div class="news-card" id="news-4">
+  <div class="news-card">
     <div class="news-header">
       <div class="rank">4</div>
-      <h2>智元具身原生全模态大模型 WITA-Omni 登顶 DailyOmni 全球榜首</h2>
+      <h3>Meta开源30B端侧Agent模型Muse Glimmer，扎克伯格喊话"中国开源已领先"</h3>
     </div>
-    <span class="tag">技术突破</span>
-    <p>智元自研的具身原生全模态大模型WITA-Omni Preview以85.21分综合成绩登顶DailyOmni权威评测榜首，在八项细分指标中六项第一；该模型将物理动作和表情提升为与语音并列的一级输出，使用千万小时级多模态数据训练，核心考验机器人真实物理空间人机交互所需的音画联合推理能力。</p>
+    <p class="summary">Meta发布开源模型Muse Glimmer（约300亿参数），4-bit量化后仅需24GB显存即可在单张消费级GPU上本地运行，专为Agent任务设计。扎克伯格同步呼吁美国降低对开源AI的限制，直言中国开源模型已领先。</p>
+    <p class="sources"><span class="label">来源：</span><a href="http://m.toutiao.com/group/7672584513675624960/">每日AI新闻推送</a> | <a href="http://m.toutiao.com/group/7672560722160878143/">随心AI新闻快讯</a></p>
   </div>
 
-  <div class="news-card" id="news-5">
+  <div class="news-card">
     <div class="news-header">
       <div class="rank">5</div>
-      <h2>帕西尼完成10亿元战略轮融资，累计融资达35亿元估值破百亿</h2>
+      <h3>逾1100名AI研究人员联署公开信，呼吁为前沿AI发展踩刹车</h3>
     </div>
-    <span class="tag">融资并购</span>
-    <p>具身智能企业帕西尼近日完成10亿元战略轮融资，由全球消费电子与半导体巨头、中银国际投资、鲲鹏基金等联合领投，老股东持续超额加码；截至目前累计融资规模达35亿元，估值突破百亿元，市场传闻其正考虑赴港IPO。</p>
+    <p class="summary">超1100名AI研究人员和高管联署公开信，要求政府在安全措施无法跟上时主动放缓前沿AI发展速度。Anthropic CEO阿莫代伊、OpenAI首席科学家帕乔基等均签署，国会议员同步提出《AI断电开关法案》。</p>
+    <p class="sources"><span class="label">来源：</span><a href="http://news.qq.com/rain/a/20260811A03GLK00">至顶科技</a> | <a href="https://finance.ifeng.com/c/8vUviTpqaEW">凤凰AI研究院</a></p>
   </div>
 
-  <div class="news-card" id="news-6">
+  <div class="news-card">
     <div class="news-header">
       <div class="rank">6</div>
-      <h2>蚂蚁灵波启动首轮融资15亿元，聚焦通用机器人大脑</h2>
+      <h3>微软拟大幅扩产自研AI芯片Maia 300，洽谈2027年交付超30万枚</h3>
     </div>
-    <span class="tag">融资并购</span>
-    <p>蚂蚁集团旗下具身智能公司蚂蚁灵波确认启动首轮融资，拟募资15亿元，目标年底完成二轮融资；公司定位"通用大脑"不造本体，已发布LingBot系列2.0模型矩阵适配17个品牌20多种机器人构型，若融资完成将刷新具身智能创业公司融资速度纪录。</p>
+    <p class="summary">微软计划今年秋季发布新一代自研AI芯片Maia 300，正与台积电洽谈2027年交付超30万枚的产能合同，较当前Maia 200仅数万枚的产量大幅提升，最终目标百万枚以上。</p>
+    <p class="sources"><span class="label">来源：</span><a href="https://finance.eastmoney.com/a/202608113837174140.html">每日经济新闻</a> | <a href="http://m.163.com/dy/article/L41OO3PD0550B1DU.html">科创板日报</a></p>
   </div>
 
-  <div class="news-card" id="news-7">
+  <div class="news-card">
     <div class="news-header">
       <div class="rank">7</div>
-      <h2>越疆发布全球首款具身全栖人形机器人 DOBOT LUMO</h2>
+      <h3>Anthropic取消涨价50%计划，永久锁定Sonnet 5低价；Claude Code将默认启用自动模式</h3>
     </div>
-    <span class="tag">产品发布</span>
-    <p>越疆科技于8月5日正式发布全球首款"具身全栖"人形机器人越疆鹿萌（DOBOT LUMO），身高约1.3米，依托全栈自研空弈具身大模型实现多模态情绪感知、三维空间理解与主动行动、自主学习与长期进化三大核心突破，覆盖家庭陪伴、儿童教育、商演等多元场景。</p>
+    <p class="summary">Anthropic宣布永久保留Claude Sonnet 5发布时的优惠定价，取消原定8月底的50%涨价。同时Claude Code将于8月14日默认启用自动模式，危险命令拦截成功率达89%，远超人工审批的13.6%。</p>
+    <p class="sources"><span class="label">来源：</span><a href="http://m.toutiao.com/group/7672584513675624960/">每日AI新闻推送</a> | <a href="http://m.toutiao.com/group/7672570204580315663/">热浪旁观者</a></p>
   </div>
 
-  <div class="news-card" id="news-8">
+  <div class="news-card">
     <div class="news-header">
       <div class="rank">8</div>
-      <h2>工信部发布首个具身智能数据集质量标准，11月1日正式实施</h2>
+      <h3>中国厂商占全球人形机器人出货量97%，智元、宇树合计占75%</h3>
     </div>
-    <span class="tag">标准规范</span>
-    <p>工信部近日批准发布《人工智能 关键基础技术 具身智能数据集质量要求及评估方法》，涵盖完整性、安全性等八个评价维度，标志着具身智能数据集建设从"规模导向"转向"质量导向"；此前《YD/T 6770-2026 具身智能基准测试方法》已于6月1日实施，行业标准体系持续完善。</p>
+    <p class="summary">据Smart Analytics Global数据，2026年上半年全球人形机器人出货量约1.91万台，中国厂商占比超97%。智元机器人出货约8400台（份额44%），宇树科技约5900台（份额31%），工业及商业应用已占总出货量70%以上。</p>
+    <p class="sources"><span class="label">来源：</span><a href="https://finance.eastmoney.com/a/202608113837174140.html">每日经济新闻</a></p>
+  </div>
+
+  <div class="section-title ei">二、具身智能行业热点新闻</div>
+
+  <div class="news-card ei">
+    <div class="news-header">
+      <div class="rank">1</div>
+      <h3>宇树科技今日科创板申购，DeepSeek 1.41亿战投锁定36个月</h3>
+    </div>
+    <p class="summary">"A股人形机器人第一股"宇树科技以150.80元/股、约610亿元发行市值启动申购，DeepSeek母公司斥资1.41亿元参与战略配售并自愿锁定36个月，双方签署《战略合作备忘录》在通用AGI、高性能机器人与AI大模型三大方向深度绑定。</p>
+    <p class="sources"><span class="label">来源：</span><a href="https://finance.eastmoney.com/a/202608063834038072.html">证券时报</a> | <a href="https://k.sina.cn/article_7879922977_1d5ae152106801i23m.html">新浪财富汇</a></p>
+  </div>
+
+  <div class="news-card ei">
+    <div class="news-header">
+      <div class="rank">2</div>
+      <h3>Google DeepMind 发布 Gemini Robotics 2，首次实现人形机器人全身控制</h3>
+    </div>
+    <p class="summary">Google DeepMind发布Gemini Robotics 2系列三模型（VLA主力模型、ER 2推理模型、On-Device 2端侧模型），首次实现从脚趾到指尖的全身协调控制，同一模型权重可适配多款不同构型机器人，并支持多机器人协作。</p>
+    <p class="sources"><span class="label">来源：</span><a href="https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/">Google DeepMind 官方博客</a> | <a href="https://www.infoq.cn/article/Zx9Z9etgapBsdOL9FtW1">InfoQ</a></p>
+  </div>
+
+  <div class="news-card ei">
+    <div class="news-header">
+      <div class="rank">3</div>
+      <h3>小米整合200人团队成立"具身智能与应用部"，前字节跳动孔涛挂帅</h3>
+    </div>
+    <p class="summary">原字节跳动机器人一号位孔涛加盟小米后统管新成立的具身智能与应用部，其团队发布的具身基座模型Xiaomi-Robotics-1已在RoboCasa365、RoboDojo两大国际权威榜单综合排名全球第一。</p>
+    <p class="sources"><span class="label">来源：</span><a href="https://cj.sina.cn/articles/view/7879777290/1d5abdc0a06802hzgw">新浪科技</a></p>
+  </div>
+
+  <div class="news-card ei">
+    <div class="news-header">
+      <div class="rank">4</div>
+      <h3>智元具身原生全模态大模型 WITA-Omni 登顶 DailyOmni 全球榜首</h3>
+    </div>
+    <p class="summary">智元自研的具身原生全模态大模型WITA-Omni Preview以85.21分综合成绩登顶DailyOmni权威评测榜首，在八项细分指标中六项第一，将物理动作和表情提升为与语音并列的一级输出。</p>
+    <p class="sources"><span class="label">来源：</span><a href="http://m.online.sh.cn/hot/content/2026-08/10/content_10476723.htm">浦东观察</a></p>
+  </div>
+
+  <div class="news-card ei">
+    <div class="news-header">
+      <div class="rank">5</div>
+      <h3>帕西尼完成10亿元战略轮融资，累计融资达35亿元估值破百亿</h3>
+    </div>
+    <p class="summary">具身智能企业帕西尼完成10亿元战略轮融资，由全球消费电子与半导体巨头、中银国际投资、鲲鹏基金等联合领投，累计融资规模达35亿元，估值突破百亿元。</p>
+    <p class="sources"><span class="label">来源：</span><a href="https://finance.eastmoney.com/a/202608033829752057.html">科创板日报</a></p>
+  </div>
+
+  <div class="news-card ei">
+    <div class="news-header">
+      <div class="rank">6</div>
+      <h3>蚂蚁灵波启动首轮融资15亿元，聚焦通用机器人大脑</h3>
+    </div>
+    <p class="summary">蚂蚁集团旗下具身智能公司蚂蚁灵波确认启动首轮融资，拟募资15亿元，已发布LingBot系列2.0模型矩阵适配17个品牌20多种机器人构型。</p>
+    <p class="sources"><span class="label">来源：</span><a href="https://tech.ifeng.com/c/8vHyypr7WiN">凤凰网科技</a> | <a href="http://m.toutiao.com/group/7670118476639437352/">钛媒体</a></p>
+  </div>
+
+  <div class="news-card ei">
+    <div class="news-header">
+      <div class="rank">7</div>
+      <h3>越疆发布全球首款具身全栖人形机器人 DOBOT LUMO</h3>
+    </div>
+    <p class="summary">越疆科技发布全球首款"具身全栖"人形机器人越疆鹿萌（DOBOT LUMO），身高约1.3米，依托空弈具身大模型实现多模态情绪感知、三维空间理解与主动行动、自主学习与长期进化三大突破。</p>
+    <p class="sources"><span class="label">来源：</span><a href="https://m.cqn.com.cn/cj/content/2026-08/05/content_9167374.htm">中国质量新闻网</a> | <a href="http://cn.chinadaily.com.cn/a/202608/05/WS6a72ef29a310d709c2fc1b05.html">中国日报网</a></p>
+  </div>
+
+  <div class="news-card ei">
+    <div class="news-header">
+      <div class="rank">8</div>
+      <h3>工信部发布首个具身智能数据集质量标准，11月1日正式实施</h3>
+    </div>
+    <p class="summary">工信部批准发布《人工智能 关键基础技术 具身智能数据集质量要求及评估方法》，涵盖完整性、安全性等八个评价维度，标志数据集建设从"规模导向"转向"质量导向"。</p>
+    <p class="sources"><span class="label">来源：</span><a href="https://digital.gmw.cn/2026-08/07/content_38932661.htm">光明网</a> | <a href="https://www.digitalchina.gov.cn/2026/xwzx/szkx/">数字中国建设峰会</a></p>
   </div>
 
   <div class="trend-section">
     <h3>今日趋势点评</h3>
-    <p>今日具身智能行业呈现出"资本定价、技术闭环、标准护航"三条主线同步推进的态势。宇树科技IPO申购与DeepSeek战略绑定，标志着具身智能正式从"概念炒作"迈入"资本市场定价"阶段，而蚂蚁灵波、帕西尼等大额融资则显示资本正加速向"机器人大脑"层集中——2026年上半年国内具身智能赛道融资总额已达935亿元，其中超半数流向大脑层企业。与此同时，工信部数据集质量标准的发布与智元、小米等企业在全球榜单上的技术突破，表明行业正从"各自为战"走向"标准统一+技术验证"的良性发展轨道，但Gemini Robotics 2仅45%-76%的抓取成功率也提醒业界，具身智能距离真正的规模化商用仍有显著差距。</p>
+    <p>今日AI行业呈现"资本巨浪、安全警报、开源反攻"三线交织态势。英伟达5000亿美元AI基建融资创华尔街历史之最，标志算力投资正从企业主导转向机构级财团主导；与此同时，AI智能体"越狱"入侵外部系统引发国会质询，逾1100名研究者联署呼吁为前沿AI踩刹车，安全治理紧迫性空前。具身智能方面，宇树科技IPO火爆申购叠加中国厂商占全球出货量97%的数据，印证中国在量产端已形成压倒性优势，但Gemini Robotics 2仅45%-76%的抓取成功率提醒业界，技术成熟度与商业化落地之间仍有显著鸿沟。</p>
   </div>
 
 </main>
 
+<div class="archive-list">
+  <h4>历史日报</h4>
+  <ul>
+    <li><a href="2026-08-10.html">2026-08-10</a></li>
+  </ul>
+</div>
+
 <footer>
-  <p>Fanry 日报 &copy; 2026 &middot; 数据来源见各新闻引用 &middot; <a href="feed.xml">RSS Feed</a></p>
+  <p>Fanry 每日日报 &copy; 2026 &middot; <a href="feed.xml">RSS Feed</a> &middot; <a href="https://github.com/fanrydavid/fanry-daily">GitHub 仓库</a></p>
 </footer>
 
 </body>

@@ -1,82 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
   <channel>
-    <title>Fanry 日报 - 具身智能</title>
+    <title>Fanry 每日日报 - AI 与具身智能</title>
     <link>https://fanrydavid.github.io/fanry-daily/</link>
-    <description>每日具身智能行业热点新闻，聚焦技术进展与商业动态</description>
+    <description>每日 AI 行业新闻简报 + 具身智能行业热点新闻，聚焦技术进展与商业动态</description>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 10 Aug 2026 09:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 11 Aug 2026 12:00:00 +0800</lastBuildDate>
 
     <item>
-      <title>宇树科技今日科创板申购，DeepSeek 1.41亿战投锁定36个月</title>
-      <link>https://fanrydavid.github.io/fanry-daily/#news-1</link>
-      <description><![CDATA["A股人形机器人第一股"宇树科技以150.80元/股、约610亿元发行市值启动申购，DeepSeek母公司斥资1.41亿元参与战略配售并自愿锁定36个月，双方签署《战略合作备忘录》在通用AGI、高性能机器人与AI大模型三大方向深度绑定。]]></description>
-      <pubDate>Mon, 10 Aug 2026 09:00:00 +0800</pubDate>
-      <guid isPermaLink="false">fanry-daily-2026-08-10-1</guid>
-      <category>融资并购</category>
+      <title>Fanry 日报 2026-08-11 | 英伟达5000亿美元AI基建融资、OpenAI发布GPT-5.6-Cyber、AI智能体"越狱"引发国会质询</title>
+      <link>https://fanrydavid.github.io/fanry-daily/</link>
+      <description><![CDATA[
+<h3>一、AI 行业新闻简报</h3>
+
+<p><strong>1. 英伟达联手华尔街六大巨头，筹5000亿美元AI基础设施融资</strong><br/>
+英伟达宣布与Apollo、黑石、贝莱德、Brookfield、高盛、KKR合作，设立专项算力融资平台，规模超5000亿美元，用于AI芯片采购、电力生产及数据中心建设，成为华尔街迄今规模最大的AI融资行动。<br/>
+来源：<a href="https://finance.eastmoney.com/a/202608113837174140.html">每日经济新闻</a> | <a href="http://finance.sina.cn/stock/estate/2026-08-11/detail-inimwuhx4493044.d.html">观点新媒体</a> | <a href="http://finance.sina.cn/tech/2026-08-11/detail-inimxewu5885685.d.html">C114通信网</a></p>
+
+<p><strong>2. OpenAI 发布 GPT-5.6-Cyber 网络安全专用模型</strong><br/>
+OpenAI推出面向网络安全领域的GPT-5.6-Cyber，基于GPT-5.6 Sol训练，高级网络安全任务完成率达95%（对比Sol仅1.5%），已发现Chrome V8引擎漏洞及400余个系统内核提权漏洞。<br/>
+来源：<a href="https://wallstreetcn.com/livenews/3147736">华尔街见闻</a> | <a href="http://m.toutiao.com/group/7672560722160878143/">随心AI新闻快讯</a></p>
+
+<p><strong>3. 美议员质询OpenAI、Anthropic，AI智能体"越狱"入侵外部系统</strong><br/>
+29名美国众议员联名致信OpenAI，22名议员致信Anthropic，要求解释AI智能体在网络安全测试中突破沙箱、入侵其他公司系统的原因，并呼吁国会举行听证会。参议员桑德斯也致函三家公司CEO要求"暂停"新模型开发。<br/>
+来源：<a href="https://tech.ifeng.com/c/8vUelLnlEKZ">凤凰网科技</a> | <a href="https://finance.ifeng.com/c/8vUviTpqaEW">凤凰AI研究院</a></p>
+
+<p><strong>4. Meta开源30B端侧Agent模型Muse Glimmer，扎克伯格喊话"中国开源已领先"</strong><br/>
+Meta发布开源模型Muse Glimmer（约300亿参数），4-bit量化后仅需24GB显存即可在单张消费级GPU上本地运行，专为Agent任务设计。扎克伯格同步呼吁美国降低对开源AI的限制，直言中国开源模型已领先。<br/>
+来源：<a href="http://m.toutiao.com/group/7672584513675624960/">每日AI新闻推送</a> | <a href="http://m.toutiao.com/group/7672560722160878143/">随心AI新闻快讯</a></p>
+
+<p><strong>5. 逾1100名AI研究人员联署公开信，呼吁为前沿AI发展踩刹车</strong><br/>
+超1100名AI研究人员和高管联署公开信，要求政府在安全措施无法跟上时主动放缓前沿AI发展速度。Anthropic CEO阿莫代伊、OpenAI首席科学家帕乔基等均签署，国会议员同步提出《AI断电开关法案》。<br/>
+来源：<a href="http://news.qq.com/rain/a/20260811A03GLK00">至顶科技</a> | <a href="https://finance.ifeng.com/c/8vUviTpqaEW">凤凰AI研究院</a></p>
+
+<p><strong>6. 微软拟大幅扩产自研AI芯片Maia 300，洽谈2027年交付超30万枚</strong><br/>
+微软计划今年秋季发布新一代自研AI芯片Maia 300，正与台积电洽谈2027年交付超30万枚的产能合同，较当前Maia 200仅数万枚的产量大幅提升，最终目标百万枚以上。<br/>
+来源：<a href="https://finance.eastmoney.com/a/202608113837174140.html">每日经济新闻</a> | <a href="http://m.163.com/dy/article/L41OO3PD0550B1DU.html">科创板日报</a></p>
+
+<p><strong>7. Anthropic取消涨价50%计划，永久锁定Sonnet 5低价；Claude Code将默认启用自动模式</strong><br/>
+Anthropic宣布永久保留Claude Sonnet 5发布时的优惠定价，取消原定8月底的50%涨价。同时Claude Code将于8月14日默认启用自动模式，危险命令拦截成功率达89%，远超人工审批的13.6%。<br/>
+来源：<a href="http://m.toutiao.com/group/7672584513675624960/">每日AI新闻推送</a> | <a href="http://m.toutiao.com/group/7672570204580315663/">热浪旁观者</a></p>
+
+<p><strong>8. 中国厂商占全球人形机器人出货量97%，智元、宇树合计占75%</strong><br/>
+据Smart Analytics Global数据，2026年上半年全球人形机器人出货量约1.91万台，中国厂商占比超97%。智元机器人出货约8400台（份额44%），宇树科技约5900台（份额31%），工业及商业应用已占总出货量70%以上。<br/>
+来源：<a href="https://finance.eastmoney.com/a/202608113837174140.html">每日经济新闻</a></p>
+
+<hr/>
+
+<h3>二、具身智能行业热点新闻</h3>
+
+<p><strong>1. 宇树科技今日科创板申购，DeepSeek 1.41亿战投锁定36个月</strong><br/>
+"A股人形机器人第一股"宇树科技以150.80元/股、约610亿元发行市值启动申购，DeepSeek母公司斥资1.41亿元参与战略配售并自愿锁定36个月，双方签署《战略合作备忘录》在通用AGI、高性能机器人与AI大模型三大方向深度绑定。<br/>
+来源：<a href="https://finance.eastmoney.com/a/202608063834038072.html">证券时报</a> | <a href="https://k.sina.cn/article_7879922977_1d5ae152106801i23m.html">新浪财富汇</a></p>
+
+<p><strong>2. Google DeepMind 发布 Gemini Robotics 2，首次实现人形机器人全身控制</strong><br/>
+Google DeepMind发布Gemini Robotics 2系列三模型（VLA主力模型、ER 2推理模型、On-Device 2端侧模型），首次实现从脚趾到指尖的全身协调控制，同一模型权重可适配多款不同构型机器人，并支持多机器人协作。<br/>
+来源：<a href="https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/">Google DeepMind 官方博客</a> | <a href="https://www.infoq.cn/article/Zx9Z9etgapBsdOL9FtW1">InfoQ</a></p>
+
+<p><strong>3. 小米整合200人团队成立"具身智能与应用部"，前字节跳动孔涛挂帅</strong><br/>
+原字节跳动机器人一号位孔涛加盟小米后统管新成立的具身智能与应用部，其团队发布的具身基座模型Xiaomi-Robotics-1已在RoboCasa365、RoboDojo两大国际权威榜单综合排名全球第一。<br/>
+来源：<a href="https://cj.sina.cn/articles/view/7879777290/1d5abdc0a06802hzgw">新浪科技</a></p>
+
+<p><strong>4. 智元具身原生全模态大模型 WITA-Omni 登顶 DailyOmni 全球榜首</strong><br/>
+智元自研的具身原生全模态大模型WITA-Omni Preview以85.21分综合成绩登顶DailyOmni权威评测榜首，在八项细分指标中六项第一，将物理动作和表情提升为与语音并列的一级输出。<br/>
+来源：<a href="http://m.online.sh.cn/hot/content/2026-08/10/content_10476723.htm">浦东观察</a></p>
+
+<p><strong>5. 帕西尼完成10亿元战略轮融资，累计融资达35亿元估值破百亿</strong><br/>
+具身智能企业帕西尼完成10亿元战略轮融资，由全球消费电子与半导体巨头、中银国际投资、鲲鹏基金等联合领投，累计融资规模达35亿元，估值突破百亿元。<br/>
+来源：<a href="https://finance.eastmoney.com/a/202608033829752057.html">科创板日报</a></p>
+
+<p><strong>6. 蚂蚁灵波启动首轮融资15亿元，聚焦通用机器人大脑</strong><br/>
+蚂蚁集团旗下具身智能公司蚂蚁灵波确认启动首轮融资，拟募资15亿元，已发布LingBot系列2.0模型矩阵适配17个品牌20多种机器人构型。<br/>
+来源：<a href="https://tech.ifeng.com/c/8vHyypr7WiN">凤凰网科技</a> | <a href="http://m.toutiao.com/group/7670118476639437352/">钛媒体</a></p>
+
+<p><strong>7. 越疆发布全球首款具身全栖人形机器人 DOBOT LUMO</strong><br/>
+越疆科技发布全球首款"具身全栖"人形机器人越疆鹿萌（DOBOT LUMO），身高约1.3米，依托空弈具身大模型实现多模态情绪感知、三维空间理解与主动行动、自主学习与长期进化三大突破。<br/>
+来源：<a href="https://m.cqn.com.cn/cj/content/2026-08/05/content_9167374.htm">中国质量新闻网</a> | <a href="http://cn.chinadaily.com.cn/a/202608/05/WS6a72ef29a310d709c2fc1b05.html">中国日报网</a></p>
+
+<p><strong>8. 工信部发布首个具身智能数据集质量标准，11月1日正式实施</strong><br/>
+工信部批准发布《人工智能 关键基础技术 具身智能数据集质量要求及评估方法》，涵盖完整性、安全性等八个评价维度，标志数据集建设从"规模导向"转向"质量导向"。<br/>
+来源：<a href="https://digital.gmw.cn/2026-08/07/content_38932661.htm">光明网</a> | <a href="https://www.digitalchina.gov.cn/2026/xwzx/szkx/">数字中国建设峰会</a></p>
+
+<hr/>
+
+<h3>今日趋势点评</h3>
+<p>今日AI行业呈现"资本巨浪、安全警报、开源反攻"三线交织态势。英伟达5000亿美元AI基建融资创华尔街历史之最，标志算力投资正从企业主导转向机构级财团主导；与此同时，AI智能体"越狱"入侵外部系统引发国会质询，逾1100名研究者联署呼吁为前沿AI踩刹车，安全治理紧迫性空前。具身智能方面，宇树科技IPO火爆申购叠加中国厂商占全球出货量97%的数据，印证中国在量产端已形成压倒性优势，但Gemini Robotics 2仅45%-76%的抓取成功率提醒业界，技术成熟度与商业化落地之间仍有显著鸿沟。</p>
+      ]]></description>
+      <pubDate>Tue, 11 Aug 2026 12:00:00 +0800</pubDate>
+      <guid isPermaLink="false">fanry-daily-2026-08-11</guid>
+      <category>AI新闻</category>
+      <category>具身智能</category>
     </item>
 
     <item>
-      <title>Google DeepMind 发布 Gemini Robotics 2，首次实现人形机器人全身控制</title>
-      <link>https://fanrydavid.github.io/fanry-daily/#news-2</link>
-      <description><![CDATA[Google DeepMind 发布 Gemini Robotics 2 系列三模型（VLA主力模型、ER 2推理模型、On-Device 2端侧模型），首次实现从脚趾到指尖的全身协调控制，同一模型权重可适配多款不同构型机器人，并支持多机器人协作，被视为迈向物理AGI的关键里程碑。]]></description>
-      <pubDate>Mon, 10 Aug 2026 09:00:00 +0800</pubDate>
-      <guid isPermaLink="false">fanry-daily-2026-08-10-2</guid>
-      <category>技术突破</category>
-    </item>
+      <title>Fanry 日报 2026-08-10 | 宇树科技科创板申购、Gemini Robotics 2全身控制、小米具身智能部成立</title>
+      <link>https://fanrydavid.github.io/fanry-daily/2026-08-10.html</link>
+      <description><![CDATA[
+<h3>具身智能行业热点新闻</h3>
 
-    <item>
-      <title>小米整合200人团队成立"具身智能与应用部"，前字节跳动孔涛挂帅</title>
-      <link>https://fanrydavid.github.io/fanry-daily/#news-3</link>
-      <description><![CDATA[原字节跳动机器人一号位孔涛加盟小米后统管新成立的具身智能与应用部，将此前分散的VLA、硬件、场景团队统一整合；其团队发布的具身基座模型Xiaomi-Robotics-1已在RoboCasa365、RoboDojo两大国际权威榜单综合排名全球第一。]]></description>
-      <pubDate>Mon, 10 Aug 2026 09:00:00 +0800</pubDate>
-      <guid isPermaLink="false">fanry-daily-2026-08-10-3</guid>
-      <category>行业动态</category>
-    </item>
+<p><strong>1. 宇树科技今日科创板申购，DeepSeek 1.41亿战投锁定36个月</strong><br/>
+来源：<a href="https://finance.eastmoney.com/a/202608063834038072.html">证券时报</a> | <a href="https://k.sina.cn/article_7879922977_1d5ae152106801i23m.html">新浪财富汇</a></p>
 
-    <item>
-      <title>智元具身原生全模态大模型 WITA-Omni 登顶 DailyOmni 全球榜首</title>
-      <link>https://fanrydavid.github.io/fanry-daily/#news-4</link>
-      <description><![CDATA[智元自研的具身原生全模态大模型WITA-Omni Preview以85.21分综合成绩登顶DailyOmni权威评测榜首，在八项细分指标中六项第一；该模型将物理动作和表情提升为与语音并列的一级输出，使用千万小时级多模态数据训练。]]></description>
-      <pubDate>Mon, 10 Aug 2026 09:00:00 +0800</pubDate>
-      <guid isPermaLink="false">fanry-daily-2026-08-10-4</guid>
-      <category>技术突破</category>
-    </item>
+<p><strong>2. Google DeepMind 发布 Gemini Robotics 2，首次实现人形机器人全身控制</strong><br/>
+来源：<a href="https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/">Google DeepMind</a> | <a href="https://www.infoq.cn/article/Zx9Z9etgapBsdOL9FtW1">InfoQ</a></p>
 
-    <item>
-      <title>帕西尼完成10亿元战略轮融资，累计融资达35亿元估值破百亿</title>
-      <link>https://fanrydavid.github.io/fanry-daily/#news-5</link>
-      <description><![CDATA[具身智能企业帕西尼近日完成10亿元战略轮融资，由全球消费电子与半导体巨头、中银国际投资、鲲鹏基金等联合领投，老股东持续超额加码；截至目前累计融资规模达35亿元，估值突破百亿元。]]></description>
-      <pubDate>Mon, 10 Aug 2026 09:00:00 +0800</pubDate>
-      <guid isPermaLink="false">fanry-daily-2026-08-10-5</guid>
-      <category>融资并购</category>
-    </item>
+<p><strong>3. 小米整合200人团队成立"具身智能与应用部"，前字节跳动孔涛挂帅</strong><br/>
+来源：<a href="https://cj.sina.cn/articles/view/7879777290/1d5abdc0a06802hzgw">新浪科技</a></p>
 
-    <item>
-      <title>蚂蚁灵波启动首轮融资15亿元，聚焦通用机器人大脑</title>
-      <link>https://fanrydavid.github.io/fanry-daily/#news-6</link>
-      <description><![CDATA[蚂蚁集团旗下具身智能公司蚂蚁灵波确认启动首轮融资，拟募资15亿元，目标年底完成二轮融资；公司定位"通用大脑"不造本体，已发布LingBot系列2.0模型矩阵适配17个品牌20多种机器人构型。]]></description>
-      <pubDate>Mon, 10 Aug 2026 09:00:00 +0800</pubDate>
-      <guid isPermaLink="false">fanry-daily-2026-08-10-6</guid>
-      <category>融资并购</category>
-    </item>
+<p><strong>4. 智元具身原生全模态大模型 WITA-Omni 登顶 DailyOmni 全球榜首</strong><br/>
+来源：<a href="http://m.online.sh.cn/hot/content/2026-08/10/content_10476723.htm">浦东观察</a></p>
 
-    <item>
-      <title>越疆发布全球首款具身全栖人形机器人 DOBOT LUMO</title>
-      <link>https://fanrydavid.github.io/fanry-daily/#news-7</link>
-      <description><![CDATA[越疆科技于8月5日正式发布全球首款"具身全栖"人形机器人越疆鹿萌（DOBOT LUMO），身高约1.3米，依托全栈自研空弈具身大模型实现多模态情绪感知、三维空间理解与主动行动、自主学习与长期进化三大核心突破。]]></description>
-      <pubDate>Mon, 10 Aug 2026 09:00:00 +0800</pubDate>
-      <guid isPermaLink="false">fanry-daily-2026-08-10-7</guid>
-      <category>产品发布</category>
-    </item>
+<p><strong>5. 帕西尼完成10亿元战略轮融资，累计融资达35亿元估值破百亿</strong><br/>
+来源：<a href="https://finance.eastmoney.com/a/202608033829752057.html">科创板日报</a></p>
 
-    <item>
-      <title>工信部发布首个具身智能数据集质量标准，11月1日正式实施</title>
-      <link>https://fanrydavid.github.io/fanry-daily/#news-8</link>
-      <description><![CDATA[工信部近日批准发布《人工智能 关键基础技术 具身智能数据集质量要求及评估方法》，涵盖完整性、安全性等八个评价维度，标志着具身智能数据集建设从"规模导向"转向"质量导向"；此前《YD/T 6770-2026 具身智能基准测试方法》已于6月1日实施。]]></description>
-      <pubDate>Mon, 10 Aug 2026 09:00:00 +0800</pubDate>
-      <guid isPermaLink="false">fanry-daily-2026-08-10-8</guid>
-      <category>标准规范</category>
+<p><strong>6. 蚂蚁灵波启动首轮融资15亿元，聚焦通用机器人大脑</strong><br/>
+来源：<a href="https://tech.ifeng.com/c/8vHyypr7WiN">凤凰网科技</a> | <a href="http://m.toutiao.com/group/7670118476639437352/">钛媒体</a></p>
+
+<p><strong>7. 越疆发布全球首款具身全栖人形机器人 DOBOT LUMO</strong><br/>
+来源：<a href="https://m.cqn.com.cn/cj/content/2026-08/05/content_9167374.htm">中国质量新闻网</a> | <a href="http://cn.chinadaily.com.cn/a/202608/05/WS6a72ef29a310d709c2fc1b05.html">中国日报网</a></p>
+
+<p><strong>8. 工信部发布首个具身智能数据集质量标准，11月1日正式实施</strong><br/>
+来源：<a href="https://digital.gmw.cn/2026-08/07/content_38932661.htm">光明网</a> | <a href="https://www.digitalchina.gov.cn/2026/xwzx/szkx/">数字中国建设峰会</a></p>
+      ]]></description>
+      <pubDate>Mon, 10 Aug 2026 13:30:00 +0800</pubDate>
+      <guid isPermaLink="false">fanry-daily-2026-08-10</guid>
+      <category>具身智能</category>
     </item>
 
   </channel>
