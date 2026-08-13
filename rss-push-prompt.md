@@ -1,6 +1,8 @@
 # RSS 推送 Prompt 片段（简化版）
 
-永久仓库已创建在 `/data/user/work/fanry-daily`，无需每次克隆。将以下片段附加到任何新闻简报定时任务的 prompt 末尾即可。
+永久仓库已创建在 `/data/user/work/fanry-daily`，GitHub Token 已保存在 `/data/user/work/.github_token`，无需每次传 Token。
+
+将以下片段附加到任何新闻简报定时任务的 prompt 末尾即可。
 
 ---
 
@@ -12,7 +14,7 @@
 
 完成新闻整理后，执行以下操作将今日 digest 推送到 RSS 订阅：
 
-1. 进入永久仓库：
+1. 进入永久仓库（已配置好认证，直接 push 即可）：
    cd /data/user/work/fanry-daily
 
 2. 创建今日日报页面（YYYY-MM-DD.html）：
@@ -40,11 +42,28 @@
 - 每天只推送一次，RSS 中只新增一条 <item>
 - 每条新闻必须附至少一个信息来源 URL
 - 来源 URL 必须是真实搜索到的地址，不可编造
+- Token 已保存在本地，git push 会自动读取，无需手动指定
 - 主页地址：https://fanrydavid.github.io/fanry-daily/
 - RSS 订阅地址：https://fanrydavid.github.io/fanry-daily/feed.xml
 ```
 
 ---
+
+## 本地配置说明
+
+| 文件 | 路径 | 用途 |
+|------|------|------|
+| GitHub Token | `/data/user/work/.github_token` | 存储 Token，权限 600 仅本用户可读 |
+| Credential Helper | `/data/user/work/.github-credential-helper.sh` | Git push 时自动读取 Token |
+| 永久仓库 | `/data/user/work/fanry-daily` | 代码仓库，已配置好 remote 和认证 |
+
+## Token 更新方法
+
+Token 过期后，只需替换一个文件即可，所有任务自动生效：
+
+```bash
+echo "ghp_NEW_TOKEN_HERE" > /data/user/work/.github_token
+```
 
 ## 项目结构
 
@@ -56,11 +75,3 @@ fanry-daily/
 ├── 2026-08-10.html     # 8月10日日报
 └── README.md
 ```
-
-## 前提条件
-
-- 永久仓库路径：`/data/user/work/fanry-daily`
-- 远端已配置认证，可直接 `git push origin main`
-- GitHub Pages 已开启，推送后约 30-60 秒自动更新
-- 主页通过 JavaScript 自动读取 RSS Feed，新增 item 后主页自动显示新日报卡片
-- 如 push 失败提示认证错误，需更新 Token：`git remote set-url origin https://fanrydavid:<NEW_TOKEN>@github.com/fanrydavid/fanry-daily.git`
